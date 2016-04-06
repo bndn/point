@@ -1,22 +1,23 @@
 {
     "version": "0.0.0",
-    "description": "",
+    "description": "A library for working with 3-dimensional points and point arithmetic",
     "authors": [
+        "Kasper Kronborg Isager <kasi@itu.dk>"
     ],
     "tags": [
+        "point",
+        "3d",
+        "arithmetic"
     ],
     "projectUrl": "https://github.itu.dk/bndn/point",
     "licenseUrl": "https://github.itu.dk/bndn/point/blob/master/LICENSE.md",
 
     "dependencies": {
+        "Vector": "0.0.0",
         "FSharp.Dnx": {
             "type": "build",
             "version": "1.0.0-*"
         }
-    },
-
-    "commands": {
-        "run": "run"
     },
 
     "frameworks": {
@@ -30,7 +31,8 @@
     },
     "fsharp": {
         "files": [
-            "Program.fs"
+            "Point.fsi",
+            "Point.fs"
         ]
     }
 }
