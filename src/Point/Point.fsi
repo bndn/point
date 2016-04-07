@@ -18,35 +18,35 @@ exception RoundNegativeDecimalsException
 /// <param name=y>The y coordinate of the point.</param>
 /// <param name=z>The z coordinate of the point.</param>
 /// <returns>The created point.</returns>
-val make : float -> float -> float -> Point
+val make : x:float -> y:float -> z:float -> Point
 
 /// <summary>
 /// Get the x coordinate of a point.
 /// </summary>
 /// <param name=p>The point whose x coordinate to get.</param>
 /// <returns>The x coordinate of the point.</returns>
-val getX : Point -> float
+val getX : p:Point -> float
 
 /// <summary>
 /// Get the y coordinate of a point.
 /// </summary>
 /// <param name=p>The point whose y coordinate to get.</param>
 /// <returns>The y coordinate of the point.</returns>
-val getY : Point -> float
+val getY : p:Point -> float
 
 /// <summary>
 /// Get the z coordinate of a point.
 /// </summary>
 /// <param name=p>The point whose z coordinate to get.</param>
 /// <returns>The z coordinate of the point.</returns>
-val getZ : Point -> float
+val getZ : p:Point -> float
 
 /// <summary>
 /// Get all coordinates of a point.
 /// </summary>
 /// <param name=p>The point whose coordinates to get.</param>
 /// <returns>The coordinates of the point.</returns>
-val getCoord : Point -> float * float * float
+val getCoord : p:Point -> float * float * float
 
 /// <summary>
 /// Displace a point by a vector.
@@ -54,7 +54,7 @@ val getCoord : Point -> float * float * float
 /// <param name=p>The point to displace.</param>
 /// <param name=v>The vector to displace the point by.</param>
 /// <returns>The displaced point.</returns>
-val move : Point -> Vector -> Point
+val move : p:Point -> v:Vector -> Point
 
 /// <summary>
 /// Compute the distance vector between two points.
@@ -62,7 +62,7 @@ val move : Point -> Vector -> Point
 /// <param name=p>The first point.</param>
 /// <param name=q>The second point.</param>
 /// <returns>The distance vector between the two points.</returns>
-val distance : Point -> Point -> Vector
+val distance : p:Point -> q:Point -> Vector
 
 /// <summary>
 /// Compute the direction vector between two points.
@@ -70,11 +70,12 @@ val distance : Point -> Point -> Vector
 /// <param name=p>The first point.</param>
 /// <param name=q>The second point.</param>
 /// <returns>The direction vector between the two points.</returns>
-val direction : Point -> Point -> Vector
+val direction : p:Point -> q:Point -> Vector
 
 /// <summary>
 /// Round a point to a specific number of decimals.
 /// </summary>
 /// <param name=p>The point to round.</param>
+/// <param name=d>The number of decimals to round to.</param>
 /// <returns>The rounded point.</returns>
-val round : Point -> int -> Point
+val round : p:Point -> d:int -> Point
