@@ -18,7 +18,7 @@ exception RoundNegativeDeicmalsException
 /// <param name=y>The y coordinate of the point.</param>
 /// <param name=z>The z coordinate of the point.</param>
 /// <returns>The created point.</returns>
-let mkPoint x y z = P(x, y, z)
+let make x y z = P(x, y, z)
 
 /// <summary>
 /// Get the x coordinate of a point.
@@ -62,7 +62,7 @@ let move (P(px, py, pz)) v = P(px + Vector.getX v, py + Vector.getY v, pz + Vect
 /// <param name=p>The first point.</param>
 /// <param name=q>The second point.</param>
 /// <returns>The distance vector between the two points.</returns>
-let distance (P(px, py, pz)) (P(qx, qy, qz)) = Vector.mkVector (qx - px) (qy - py) (qz - pz)
+let distance (P(px, py, pz)) (P(qx, qy, qz)) = Vector.make (qx - px) (qy - py) (qz - pz)
 
 /// <summary>
 /// Compute the direction vector between two points.

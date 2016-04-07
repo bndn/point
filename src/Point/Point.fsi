@@ -11,7 +11,7 @@ type Point
 exception RoundNegativeDeicmalsException
 
 /// Create a point with three coordinates.
-val mkPoint : float -> float -> float -> Point
+val make : float -> float -> float -> Point
 
 /// Get the x coordinate of a point.
 val getX : Point -> float
