@@ -14,6 +14,7 @@ exception RoundNegativeDecimalsException
 
 /// <summary>
 /// Create a point with three coordinates.
+/// </summary>
 /// <param name=x>The x coordinate of the point.</param>
 /// <param name=y>The y coordinate of the point.</param>
 /// <param name=z>The z coordinate of the point.</param>
