@@ -13,7 +13,7 @@
     "licenseUrl": "https://github.itu.dk/bndn/point/blob/master/LICENSE.md",
 
     "dependencies": {
-        "Vector": "0.0.0",
+        "Vector": "",
         "FSharp.Dnx": {
             "type": "build",
             "version": "1.0.0-*"
