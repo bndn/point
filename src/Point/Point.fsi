@@ -8,7 +8,7 @@ open Vector
 type Point
 
 /// Raised in case of attempting to round a point to a negative number of decimals.
-exception RoundNegativeDeicmalsException
+exception RoundNegativeDecimalsException
 
 /// Create a point with three coordinates.
 val make : float -> float -> float -> Point
