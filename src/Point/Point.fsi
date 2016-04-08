@@ -3,7 +3,6 @@ module Point
 
 open Vector
 
-[<Sealed>]
 type Point
 
 /// <summary>
