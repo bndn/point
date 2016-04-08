@@ -14,6 +14,7 @@ exception RoundNegativeDecimalsException
 
 /// <summary>
 /// Create a point with three coordinates.
+/// </summary>
 /// <param name=x>The x coordinate of the point.</param>
 /// <param name=y>The y coordinate of the point.</param>
 /// <param name=z>The z coordinate of the point.</param>
@@ -76,8 +77,9 @@ let direction p q = Vector.normalise (distance p q)
 /// Round a point to a specific number of decimals.
 /// </summary>
 /// <param name=p>The point to round.</param>
+/// <param name=d>The number of decimals to round to.</param>
 /// <returns>The rounded point.</returns>
-let round (P(x, y, z)) (d : int) =
+let round (P(x, y, z)) (d:int) =
   if d < 0 then raise RoundNegativeDecimalsException
   let f = 10.0 ** float d
   P(round (x * f) / f, round (y * f) / f, round (z * f) / f)
