@@ -25,7 +25,7 @@
     },
     "fsharp": {
         "files": [
-	    "PointTest.fs"
+            "PointTest.fs"
         ]
     }
 }
