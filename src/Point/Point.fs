@@ -2,10 +2,10 @@
 module Point
 
 type Point =
-  | P of float * float * float
-  override p.ToString() =
-    match p with
-    | P(x, y, z) -> "(" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ")"
+    | P of float * float * float
+    override p.ToString() =
+        match p with
+        | P(x, y, z) -> "(" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ")"
 
 /// <summary>
 /// Raised in case of attempting to round a point to a negative number of decimals.
@@ -80,6 +80,6 @@ let direction p q = Vector.normalise (distance p q)
 /// <param name=d>The number of decimals to round to.</param>
 /// <returns>The rounded point.</returns>
 let round (P(x, y, z)) (d:int) =
-  if d < 0 then raise RoundNegativeDecimalsException
-  let f = 10.0 ** float d
-  P(round (x * f) / f, round (y * f) / f, round (z * f) / f)
+    if d < 0 then raise RoundNegativeDecimalsException
+    let f = 10.0 ** float d
+    P(round (x * f) / f, round (y * f) / f, round (z * f) / f)
