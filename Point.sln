@@ -1,11 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54F14F15-4F40-48BC-974A-20BDAC6F5613}") = "Point", "src\Point\Point.xproj", "{966D5435-C02B-4CC6-BE2A-85FD39CBDDE5}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Point", "src\Point\Point.xproj", "{966D5435-C02B-4CC6-BE2A-85FD39CBDDE5}"
 EndProject
-Project("{54F14F15-4F40-48BC-974A-20BDAC6F5613}") = "Point.Test", "test\Point.Test\Point.Test.xproj", "{898F7F26-D8A9-44AF-8C1C-9CCBBDE0A1D9}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Point.Test", "test\Point.Test\Point.Test.xproj", "{898F7F26-D8A9-44AF-8C1C-9CCBBDE0A1D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
